@@ -15,8 +15,8 @@ This is a website that helps Akan's know their birthdays and day of the week the
 * cd Akan-Birthdays
 
 ## Technologies used
->html
->css
->bootstrap
->Javascript
->markdown
+* html
+* css
+* bootstrap
+* Javascript
+* markdown
