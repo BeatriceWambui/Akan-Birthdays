@@ -20,3 +20,13 @@ This is a website that helps Akan's know their birthdays and day of the week the
 * bootstrap
 * Javascript
 * markdown
+
+## Contact Information
+>Telaphone number
+*0728142695
+>Email
+*wachirabeatice2020@gmail.com
+
+## License & Copyright
+ > MIT license
+ >copyright@BeatriceWambui2017
