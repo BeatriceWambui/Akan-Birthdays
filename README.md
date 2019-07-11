@@ -2,12 +2,12 @@
 This is a website that helps Akan's know their birthdays and day of the week they were born.
 
 ## Author
->Beatrice Wambui.
->Kenyan Citizen.
->Student Moringa School.
+Beatrice Wambui.
+Kenyan Citizen.
+Student Moringa School.
 
 ## Live Page Display
-> https://BeatriceWambui.github.io/Akan-Birthdays/
+ https://BeatriceWambui.github.io/Akan-Birthdays/
 
 ## Setup Instruction
 * ctrl+alt+t
@@ -22,11 +22,11 @@ This is a website that helps Akan's know their birthdays and day of the week the
 * markdown
 
 ## Contact Information
->Telaphone number
+Telaphone number
 *0728142695
->Email
+Email
 *wachirabeatice2020@gmail.com
 
 ## License & Copyright
- > MIT license
- >copyright@BeatriceWambui2017
+  MIT license
+  copyright@BeatriceWambui2017
