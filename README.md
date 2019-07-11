@@ -14,6 +14,13 @@ This is a website that helps Akan's know their birthdays and day of the week the
 * git clone https://github.com/BeatriceWambui/Akan-Birthdays.git
 * cd Akan-Birthdays
 
+## BDD
+The project should prompt the user to
+* See a  small description of what the application does on the landing page.
+* Enter their birthday through a form. 
+* Choose what gender the user is.
+* Click the submit button to see what their Akan name is.
+
 ## Technologies used
 * html
 * css
