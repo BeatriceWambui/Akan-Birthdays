@@ -1,0 +1,25 @@
+body{
+  background-size: auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+.project>li{
+  font-size: 20px;
+  text-decoration: none;
+  }
+
+  nav{
+    text-align: center;
+
+  }
+form{
+  padding-left: 50px;
+}
+.margin{
+  padding-left: 50px;
+}
