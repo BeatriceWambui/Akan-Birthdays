@@ -18,8 +18,14 @@ h1{
 
   }
 form{
-  padding-left: 50px;
+  padding-left: 40px;
 }
 .margin{
-  padding-left: 50px;
+  padding-left: 40px;
+}
+#footer{
+  padding-right: 50px;
+}
+.footer{
+  display: block;
 }

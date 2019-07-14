@@ -22,7 +22,7 @@ function form(){
     alert("Gender invalid");
   }
   var calc = calculation();
-  if (gender=="male"&& calc==0){
+  if (gender=="male"&& calc==0){ 
     console.log("Your Akan name is " + male[0]+"." + "You were born on: "+ days[0] );
   }
   else if (gender=="male"&& calc==1){
