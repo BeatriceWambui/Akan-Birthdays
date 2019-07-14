@@ -15,11 +15,14 @@ function form(){
   var gender = document.getElementsByName("gender");
   if (gender[0].checked=true){
     gender="male";
-  }else if (gender[1].checked=true) {
+  }
+  else if (gender[1].checked=true) {
     gender="female";
-  }else {
+  }
+  else {
     alert("Gender invalid");
   }
+
   var calc = calculation();
   if (gender=="male"&& calc==0){
      document.write("Your Akan name is " + male[0]+"." + "You were born on: "+ days[0] );
