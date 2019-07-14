@@ -6,7 +6,6 @@ var CC =document.getElementById("century").value;
 var YY =document.getElementById("year").value;
 var MM =document.getElementById("month").value;
 var DD =document.getElementById("date").value;
-
 function calculation(){
 
    maths = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD-1)%7;
@@ -22,50 +21,50 @@ function form(){
     alert("Gender invalid");
   }
   var calc = calculation();
-  if (gender=="male"&& calc==0){ 
-    console.log("Your Akan name is " + male[0]+"." + "You were born on: "+ days[0] );
+  if (gender=="male"&& calc==0){
+     document.write("Your Akan name is " + male[0]+"." + "You were born on: "+ days[0] );
   }
   else if (gender=="male"&& calc==1){
-    console.log("Your Akan name is " + male[1]+"." + "You were born on: "+ days[1] );
+    document.write("Your Akan name is " + male[1]+"." + "You were born on: "+ days[1] );
   }
   else if (gender=="male"&& calc==2){
-    console.log("Your Akan name is " + male[2]+"." + "You were born on: "+ days[2] );
+    document.write("Your Akan name is " + male[2]+"." + "You were born on: "+ days[2] );
   }
   else if (gender=="male"&& calc==3){
-    console.log("Your Akan name is " + male[3]+"." + "You were born on: "+ days[3] );
+    document.write("Your Akan name is " + male[3]+"." + "You were born on: "+ days[3] );
   }
   else if (gender=="male"&&calc==4){
-    console.log("Your Akan name is " + male[4]+"." + "You were born on: "+ days[4] );
+    document.write("Your Akan name is " + male[4]+"." + "You were born on: "+ days[4] );
   }
   else if (gender=="male"&& calc==5){
-    console.log("Your Akan name is " + male[5]+"." + "You were born on: "+ days[5] );
+    document.write("Your Akan name is " + male[5]+"." + "You were born on: "+ days[5] );
   }
   else if (gender=="male"&& calc==6){
-  console.log("Your Akan name is " + male[6]+"." + "You were born on: "+ days[6] );
+    document.write("Your Akan name is " + male[6]+"." + "You were born on: "+ days[6] );
   }
   else if (gender=="female"&& calc==0){
-  console.log("Your Akan name is " + female[0]+"." + "You were born on: "+ days[0] );
+    document.write("Your Akan name is " + female[0]+"." + "You were born on: "+ days[0] );
   }
   else if (gender=="female"&& calc==1){
-    console.log("Your Akan name is " + female[1]+"." + "You were born on: "+ days[1] );
+    document.write("Your Akan name is " + female[1]+"." + "You were born on: "+ days[1] );
   }
   else if (gender=="female"&& calc==2){
-    console.log("Your Akan name is " + female[2]+"." + "You were born on: "+ days[2] );
+    document.write("Your Akan name is " + female[2]+"." + "You were born on: "+ days[2] );
   }
   else if (gender=="female"&& calc==3){
-    console.log("Your Akan name is " + female[3]+"." + "You were born on: "+ days[3] );
+    document.write("Your Akan name is " + female[3]+"." + "You were born on: "+ days[3] );
   }
   else if (gender=="female"&& calc==4){
-    console.log("Your Akan name is " + female[4]+"." + "You were born on: "+ days[4] );
+    document.write("Your Akan name is " + female[4]+"." + "You were born on: "+ days[4] );
   }
   else if (gender=="female"&& calc==5){
-  console.log("Your Akan name is " + female[5]+"." + "You were born on: "+ days[5] );
+    document.write("Your Akan name is " + female[5]+"." + "You were born on: "+ days[5] );
   }
   else if (gender=="female"&& calc==6){
-  console.log("Your Akan name is " + female[6]+"." + "You were born on: "+ days[6] );
+    document.write("Your Akan name is " + female[6]+"." + "You were born on: "+ days[6] );
   }
   else{
-    console.log("Try Again");
+    document.write("Try Again");
   }
 
 
