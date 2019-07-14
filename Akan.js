@@ -12,7 +12,7 @@ function calculation(){
    return (Math.round(maths));
 }
 function form(){
-  var gender = document.getElementsByName("gender");
+  var gender = document.getElementsByName("gender").innerHTML;
   if (gender[0].checked=true){
     gender="male";
   }
