@@ -3,16 +3,19 @@ var female =["Akosua", "Adwaa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var male =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
 function validation(){
-  if (document.getElementsByName("century").value===""){
+  if (document.getElementsById("century").value==""){
     alert("the centuryis invalid");
     return false;
-  }else if (document.getElementsByName("year").value==="") {
+  }
+  else if (document.getElementsById("year").value=="") {
     alert("the year is invalid");
     return false;
-  }else if (document.getElementsByName("month").value==="") {
+  }
+  else if (document.getElementsById("month").value=="" ) {
     alert("the month is invalid");
     return false;
-  }else if (document.getElementsByName("date").value==="") {
+  }
+  else if (document.getElementsById("date").value=="") {
     alert("the date is invalid");
   }else{
     return true;
