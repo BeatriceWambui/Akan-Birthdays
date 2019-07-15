@@ -2,17 +2,17 @@
   <html>
     <head>
       <title>Akan-Birthdays</title>
-
-    </head>
-    <body>
-      <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel ="stylesheet" type="text/css" media="all">
+      <link href="bootstrap.css" rel ="stylesheet" type="text/css" media="all">
       <link href="styles.css" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
       <div class="jumbotron">
             <div class="bg-secondary"><h1>PROJECT WORKABILITY</h1></div>
       </div>
 
-      <div class="container">
+      <div class="container-fluid">
 
          <nav>
           <ul class="project">
@@ -20,63 +20,67 @@
           </ul>
          </nav>
 
+         <div class="jumbotron">
+         <div class="overlay">
+          <form class="form">
+            <div class="form-group">
+              <label>Date:</label>
+              <input type="number" class="form-control" id="date" placeholder="Enter Date of Birth!" name="date">
+            </div>
+            <div class="form-group">
+              <label>Month:</label>
+              <input type="number" class="form-control" id="month" placeholder="Enter Month of Birth!" name="month">
+            </div>
+            <div class="form-group">
+              <label>Century:</label>
+              <input type="number" class="form-control" id="century" placeholder="Enter Century of Birth!" name="century">
+            </div>
+            <div class="form-group">
+              <label>Year:</label>
+              <input type="number" class="form-control" id="year" placeholder="Enter Year of Birth!" name="year">
+            </div>
+            <div class="form-group">
+              <label>Gender:</label> <br>
+              <label class="radio-inline"><input type="radio" name="gender" checked>Male</label>
+              <label class="radio-inline"><input type="radio" name="gender">Female</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+         </div>
+         </div>
+
          <div class="card">
-         <div class="row">
-            <div com-md-6>
-               <div class="bg-info">
-                  <div class="bg-secondary"><h2><strong>Fill in the form</strong></h2></div>
-                      <form onsubmit="validation();">
-                      firstname   :<br>
-                      <input type="text" id="name1" name="firstname" placeholder="write your First Name"><br>
-                      secondname  :<br>
-                      <input type="text" id="name2" name="SecondName" placeholder="Write your second name"><br>
-                      gender:<br>
-                      <input type="radio" id="male" name="gender" value="male"> Male
-                      <input type="radio" id="female" name="gender" value="female">Female<br>
-                      birthday     :<br>
-                      <input type="number" name="date" id="date"placeholder="eg.20" ><br>
-                      birthmonth   :<br>
-                      <input type="number" name="month" id="month" placeholder="eg.7"><br>
-                      birthcentury :<br>
-                      <input type="number" name="century" id="century" placeholder="eg.20" ><br>
-                      birthyear    :<br>
-                      <input type="number" name="year" id="year" placeholder="eg.00"><br>
-                      submit       :<br>
-                      <input type="submit" value="submit" onclick="final();">
-                    </form>
-                  </div>
-                </div>
-        <div class="col-md-6">
+        
           <div class="margin">
 
-            <div class="bg-secondary"><h2><strong>About the Akan</strong></h2></div>
-          <p>This is a website that helps users to know their Akan names.
-            This is based on the user being able to input their birthdays and
-            their gender.The gender helps the website determine the Akan name
-            for the user.
-          </p>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="bg-secondary">
-                <h2><strong>Male Names</strong></h2>
+              <div class="bg-secondary"><h2><strong>About the Akan</strong></h2></div>
+              <p>This is a website that helps users to know their Akan names.
+              This is based on the user being able to input their birthdays and
+              their gender.The gender helps the website determine the Akan name
+              for the user.
+              </p>
+              <div class="row">
+              <div class="col-md-6">
+                <div class="bg-secondary">
+                  <h2><strong>Male Names</strong></h2>
+                </div>
+                <ol>
+                  <li>Sunday: Kwasi</li>
+
+                  <li>Monday: Kwadwo</li>
+
+                  <li>Tuesday: Kwabena</li>
+
+                  <li>Wednesday: Kwaku</li>
+
+                  <li>Thursday:  Yaw</li>
+
+                  <li>Friday: Kofi</li>
+
+                  <li>Saturday: Kwame</li>
+                </ol>
               </div>
-              <ol>
-                <li>Sunday: Kwasi</li>
-
-                <li>Monday: Kwadwo</li>
-
-                <li>Tuesday: Kwabena</li>
-
-                <li>Wednesday: Kwaku</li>
-
-                <li>Thursday:  Yaw</li>
-
-                <li>Friday: Kofi</li>
-
-                <li>Saturday: Kwame</li>
-              </ol>
-            </div>
-            <div class="col-md-6">
+              <div class="col-md-6">
               <div class="bg-secondary">
                 <h2><strong>Female Names</strong></h2>
               </div>
@@ -99,23 +103,25 @@
 
             </div>
           </div>
-        </div>
-      </div><hr>
-      <div class="footer">
-
-        <footer id="footer">
-          <p>email:<strong>wachirabeatice@gmail.com</strong></p>
-          <div class="bg-secondary">
-            <h1>MY HANDLES</h1>
+          
+          <hr>
+          <div class="footer">
+          
+            <footer id="footer">
+              <p>email:<strong>wachirabeatice@gmail.com</strong></p>
+              <div class="bg-secondary">
+                <h1>MY HANDLES</h1>
+              </div>
+              <img src="images/flower.jpeg" width="100px" height="100px">
+            
+              <a href="#" class="fa fa-facebook-square">Facebook</a><br>
+              <a href="#" class="fa fa-twitter-square">Twitter</a><br>
+              <a href="#" class="fa fa-googlez">Google</a><br>
+              copyright 2019 Wachira Beatrice &copy;
+              
+            </footer>
+            
           </div>
-
-          <a href="#" class="fa fa-facebook-square">Facebook</a><br>
-          <a href="#" class="fa fa-twitter-square">Twitter</a><br>
-          <a href="#" class="fa fa-googlez">Google</a><br>
-          copyright 2019 Wachira Beatrice &copy;
-        </footer>
-        <img src="images/flower.jpeg" width="200px" height="330px">
-      </div>
 
       </div>
       </div>
