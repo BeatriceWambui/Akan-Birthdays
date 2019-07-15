@@ -2,28 +2,34 @@ var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 var female =["Akosua", "Adwaa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var male =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 // var document.getElementById("form");
-var CC =document.getElementById("century").value;
-var YY =document.getElementById("year").value;
-var MM =document.getElementById("month").value;
-var DD =document.getElementById("date").value;
-function calculation(){
+var CC =document.getElementsByName("century").value;
+var YY =document.getElementsByName("year").value;
+var MM =document.getElementsByName("month").value;
+var DD =document.getElementsByName("date").value;
+/*function calculation(){
 
    maths = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD-1)%7;
    return (Math.round(maths));
-}
-function form(){
-  var gender = document.getElementsByName("gender").innerHTML;
-  if (gender[0].checked=true){
-    gender="male";
-  }
-  else if (gender[1].checked=true) {
-    gender="female";
-  }
-  else {
-    alert("Gender invalid");
+}*/
+
+  var calc;
+  function calculation(){
+    calc= ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD-1)%7;
+    return (Math.round(calc));
   }
 
-  var calc = calculation();
+  function final(){
+    var gender = document.getElementsByName("genders").value;
+    if (gender[0].checked==true){
+      gender="male";
+    }
+    else if (gender[1].checked==true) {
+      gender="female";
+    }
+    else {
+      alert("Gender invalid");
+    }
+    calc = calculation();
   if (gender=="male"&& calc==0){
      document.write("Your Akan name is " + male[0]+"." + "You were born on: "+ days[0] );
   }
@@ -69,6 +75,4 @@ function form(){
   else{
     document.write("Try Again");
   }
-
-
 }
