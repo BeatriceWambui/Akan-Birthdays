@@ -8,9 +8,9 @@
     </head>
     <body>
 
-      <div class="jumbotron">
+      <!-- <div class="jumbotron">
             <div class="bg-secondary"><h1>PROJECT WORKABILITY</h1></div>
-      </div>
+      </div> -->
 
       <div class="container-fluid">
 
@@ -22,7 +22,7 @@
 
          <div class="jumbotron">
          <div class="overlay">
-          <form class="form">
+          <form class="form" name="formA" >
             <div class="form-group">
               <label>Date:</label>
               <input type="number" class="form-control" id="date" placeholder="Enter Date of Birth!" name="date">
@@ -44,7 +44,7 @@
               <label class="radio-inline"><input type="radio" name="gender" checked>Male</label>
               <label class="radio-inline"><input type="radio" name="gender">Female</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="validate();">Submit</button>
           </form>
          </div>
          </div>
