@@ -1,27 +1,39 @@
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var female =["Akosua", "Adwaa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var male =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-// var document.getElementById("form");
-var CC =document.getElementsByName("century").value;
-var YY =document.getElementsByName("year").value;
-var MM =document.getElementsByName("month").value;
-var DD =document.getElementsByName("date").value;
-/*function calculation(){
 
-   maths = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD-1)%7;
-   return (Math.round(maths));
-}*/
+function validation(){
+  if (document.getElementsByName("century").value===""){
+    alert("the centuryis invalid");
+    return false;
+  }else if (document.getElementsByName("year").value==="") {
+    alert("the year is invalid");
+    return false;
+  }else if (document.getElementsByName("month").value==="") {
+    alert("the month is invalid");
+    return false;
+  }else if (document.getElementsByName("date").value==="") {
+    alert("the date is invalid");
+  }else{
+    return true;
+  }
 
-  var calc;
+
+}
   function calculation(){
-    calc= ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD-1)%7;
-    return (Math.round(calc));
+    var CC =document.getElementsByName("century").value;
+    var YY =document.getElementsByName("year").value;
+    var MM =document.getElementsByName("month").value;
+    var DD =document.getElementsByName("date").value;
+    dayOfTheWeek= ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD-1)%7;
+    return (Math.round(dayOfTheWeek));
   }
 
   function final(){
-    var gender = document.getElementsByName("genders").value;
+    var calc = calculation();
+     gender = document.getElementsByName("gender");
     if (gender[0].checked==true){
-      gender="male";
+      gender= "male";
     }
     else if (gender[1].checked==true) {
       gender="female";
@@ -29,7 +41,6 @@ var DD =document.getElementsByName("date").value;
     else {
       alert("Gender invalid");
     }
-    calc = calculation();
   if (gender=="male"&& calc==0){
      document.write("Your Akan name is " + male[0]+"." + "You were born on: "+ days[0] );
   }
@@ -73,6 +84,6 @@ var DD =document.getElementsByName("date").value;
     document.write("Your Akan name is " + female[6]+"." + "You were born on: "+ days[6] );
   }
   else{
-    document.write("Try Again");
+alert("tyr again")
   }
 }

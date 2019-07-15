@@ -16,39 +16,42 @@
 
          <nav>
           <ul class="project">
-            <li><a href="index.html"><button type="button">Akan</button></a></li>
+            <li><a href="index.html"><button type="button">Home</button></a></li>
           </ul>
          </nav>
+
          <div class="card">
          <div class="row">
+           <form>
+
          <div com-md-6>
            <div class="bg-info">
               <div class="bg-secondary"><h2><strong>Fill in the form</strong></h2></div>
-
-                firstname   :<br>
+                 firstname   :<br>
                 <input type="text" id="name1" name="firstname" placeholder="write your First Name"><br>
                 secondname  :<br>
                 <input type="text" id="name2" name="SecondName" placeholder="Write your second name"><br>
                 gender:<br>
-                <input type="radio" id="male" name="genders" value="male" checked> Male
-                <input type="radio" id="female" name="genders" value="female">Female<br>
+                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="female" name="gender" value="female">Female<br>
                 birthday     :<br>
-                <input type="number" name="date" id="date" ><br>
+                <input type="number" name="date" id="date"placeholder="eg.20" ><br>
                 birthmonth   :<br>
-                <input type="number" name="month" id="month" ><br>
+                <input type="number" name="month" id="month" placeholder="eg.7"><br>
                 birthyear    :<br>
-                <input type="number" name="year" id="year" ><br>
+                <input type="number" name="year" id="year" placeholder="eg.00"><br>
                 birthcentury :<br>
-                <input type="number" name="century" id="century"  ><br>
+                <input type="number" name="century" id="century" placeholder="eg.20" ><br>
                 submit       :<br>
-                <button  type="submit" name="submit" onclick="final()"> submit</button>
+                <input type="submit" value="submit" onclick="final()">
+              </form>
       </div>
 
         </div>
         <div class="col-md-6">
           <div class="margin">
 
-            <div class="bg-secondary"><h2><strong>About the Project</strong></h2></div>
+            <div class="bg-secondary"><h2><strong>About the Akan</strong></h2></div>
           <p>This is a website that helps users to know their Akan names.
             This is based on the user being able to input their birthdays and
             their gender.The gender helps the website determine the Akan name
